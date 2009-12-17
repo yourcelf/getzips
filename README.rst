@@ -13,7 +13,7 @@ usage
 -----
 
 To get fairly recent zip codes, cities and states, simply `Download zips.csv
-<http://github.com/yourcelf/getzips/raw/master/getzips.csv>`_.
+<http://github.com/yourcelf/getzips/raw/master/zips.csv>`_.
 
 To run your own spidering operation and get the very latest results:
 

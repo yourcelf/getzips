@@ -4,6 +4,11 @@ import time
 import urllib2, urllib
 import csv
 
+import html5lib
+
+# Limit the speed of spider requests -- delay in seconds between requests:
+request_delay = 0.1
+
 class ZipScraper(object):
     form_url = "http://zip4.usps.com/zip4/citytown_zip.jsp"
     post_url = "http://zip4.usps.com/zip4/zcl_3_results.jsp"
@@ -36,6 +41,7 @@ class ZipScraper(object):
         zips = ("%05i" % i for i in range(100000))
         for zip in zips:
             self.lookup_zip(zip)
+            time.sleep(request_delay)
 
     def lookup_zip(self, zip):
         """ Downloads and saves the USPS web site describing zip codes. """
@@ -76,5 +82,5 @@ class ZipScraper(object):
 
 if __name__ == "__main__":
     scraper = ZipScraper()
-    #scraper.scrape()
+    scraper.scrape()
     scraper.collate_results()

@@ -41,6 +41,7 @@ class ZipScraper(object):
         zips = ("%05i" % i for i in range(100000))
         for zip in zips:
             self.lookup_zip(zip)
+            print zip
             time.sleep(request_delay)
 
     def lookup_zip(self, zip):

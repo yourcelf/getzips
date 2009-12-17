@@ -25,4 +25,4 @@ limits the speed of its requests using the ``request_delay`` variable (set at
 the top of the script), in order to play nice with USPS.
 
 If you obtain more current results, please submit a pull request with the
-updated data, so that we can all get the latest results here. 
+updated ``zips.csv``, so that we can all get the latest results here. 

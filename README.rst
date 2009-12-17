@@ -26,3 +26,11 @@ the top of the script), in order to play nice with USPS.
 
 If you obtain more current results, please submit a pull request with the
 updated ``zips.csv``, so that we can all get the latest results here. 
+
+dependencies
+------------
+
+``spider_usps.py`` depends on:
+ * `HTML5lib <http://code.google.com/p/html5lib/>`_
+ * `Beautiful Soup <http://www.crummy.com/software/BeautifulSoup/>`_
+ * Python version 2.6
